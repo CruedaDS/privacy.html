@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CipherMessage – Informativa sulla privacy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
+         max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.8rem; margin-bottom: .2em; }
+  h2 { font-size: 1.2rem; margin-top: 2em; border-top: 1px solid #8884; padding-top: 1em; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; padding: .5em .6em; border-bottom: 1px solid #8884; vertical-align: top; }
+  .meta { color: #888; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Informativa sulla privacy di CipherMessage</h1>
+<p class="meta">Ultimo aggiornamento: settembre 2026 · Sviluppatore: CrueDa · Contatto: <a href="mailto:cruedaservice@gmail.com">cruedaservice@gmail.com</a></p>
+
+<h2>1. Cosa fa l'app</h2>
+<p>CipherMessage è un'app di messaggistica cifrata end-to-end. Ogni messaggio viene cifrato sul dispositivo di chi lo scrive, con la chiave pubblica del destinatario, prima di essere inviato. Solo il destinatario, con la sua chiave privata (che non lascia mai il suo dispositivo), può leggerlo.</p>
+
+<h2>2. Dati che raccogliamo</h2>
+<p>Per funzionare, l'app usa Firebase (Google) come infrastruttura. I dati sono questi:</p>
+<table>
+<tr><th>Dato</th><th>Perché serve</th></tr>
+<tr><td>ID utente anonimo (Firebase Authentication)</td><td>Distinguere gli utenti senza richiedere email o telefono</td></tr>
+<tr><td>Chiave pubblica RSA</td><td>Permettere ad altri di scriverti in modo cifrato</td></tr>
+<tr><td>Nickname scelto da te</td><td>Mostrare un nome al posto di un ID</td></tr>
+<tr><td>Token per le notifiche (Firebase Cloud Messaging)</td><td>Avvisarti quando arriva un messaggio</td></tr>
+<tr><td>Metadati dei messaggi (mittente, destinatario, orario)</td><td>Consegnare il messaggio e ordinare la cronologia</td></tr>
+<tr><td>Contenuto dei messaggi, sempre in forma cifrata</td><td>È il messaggio stesso: nessuno tranne il destinatario può leggerlo, nemmeno noi</td></tr>
+</table>
+<p><strong>Non raccogliamo</strong> il tuo vero nome, email, numero di telefono, posizione o rubrica.</p>
+
+<h2>3. Cifratura e sicurezza</h2>
+<p>I messaggi usano una cifratura ibrida RSA + AES. La tua chiave privata viene generata e conservata solo sul tuo dispositivo e non viene mai caricata sui nostri server. Anche con accesso completo al database non è possibile leggere il contenuto dei messaggi.</p>
+
+<h2>4. Servizi di terze parti</h2>
+<ul>
+<li><strong>Firebase</strong> (Google): Authentication, Firestore, Cloud Messaging e Cloud Functions ospitano i dati elencati sopra. Vedi l'<a href="https://policies.google.com/privacy">informativa privacy di Google</a>.</li>
+<li><strong>Google AdMob</strong>: mostra pubblicità nell'app. AdMob può raccogliere identificativi del dispositivo e dati di utilizzo per gli annunci, secondo le <a href="https://policies.google.com/technologies/ads">norme di Google sulla pubblicità</a>.</li>
+</ul>
+
+<h2>5. Conservazione e cancellazione</h2>
+<p>I dati restano associati al tuo ID finché usi l'app. Disinstallandola vengono rimosse le chiavi e i dati locali. Per far cancellare i dati associati al tuo account sui nostri server (profilo pubblico e cronologia messaggi), scrivi a <a href="mailto:cruedaservice@gmail.com">cruedaservice@gmail.com</a>: gestiamo la richiesta manualmente.</p>
+
+<h2>6. Minori</h2>
+<p>L'app non è rivolta ai minori di 13 anni e non ne raccogliamo consapevolmente i dati. Se ritieni che un minore ci abbia fornito dati, contattaci per la rimozione.</p>
+
+<h2>7. Modifiche</h2>
+<p>Se aggiorniamo questa informativa in modo sostanziale, cambieremo la data in cima alla pagina.</p>
+
+<h2>8. Contatti</h2>
+<p>Per domande sulla privacy o sui tuoi dati: <a href="mailto:cruedaservice@gmail.com">cruedaservice@gmail.com</a></p>
+</body>
+</html>
